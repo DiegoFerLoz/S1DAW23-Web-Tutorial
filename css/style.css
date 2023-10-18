@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+/* For desktop: */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-red {
+    background-color: #c91010;
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-azul-bg {
+    background-color: rgb(132, 62, 252);
+}
+.bg-amarillo {
+    background-color: rgb(255, 251, 5);
+}
+.bg-azulLogin{
+    background-color: #6648cf;
+}
+
+.bg-PROG{
+    color:black;
+    background-color: #bc7878;
+}
+.bg-FOL{
+    color:black;
+    background-color: #f0f0c8;
+}
+.bg-SISI{
+    color:black;
+    background-color: #b4b464;
+}
+.bg-ENDE{
+    color:black;
+    background-color: #28c8c8;
+}
+.bg-LMSG{
+    color:black;
+    background-color: #ffd232;
+}
+.bg-ING{
+    color:black;
+    background-color: #ffa264;
+}
+.bg-BDD{
+    color:black;
+    background-color: #ffc8c8;
+}
+
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+}
+.text-azul {
+    color: rgb(161, 180, 239);
+}
+.text-cyan {
+    color: #078080;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+
+.subr{
+    text-decoration: underline;
+}
+
+#custom ul{
+    list-style-type: square;
+}
+#custom ul ul{
+    list-style-type: upper-roman;
+}
+#custom ul ul ul{
+    list-style-type: decimal;
+}
+#customimage ul{
+    list-style-type: square;
+}
+#customimage ul ul{
+    list-style-type: upper-roman;
+}
+#customimage ul ul ul{
+    list-style-type: decimal;
+    list-style-image: url(../img/poke.png);
+}
+
+
+table.tcentered{
+    width: 60%;
+    margin: 0 auto;
+    color:aliceblue;
+    background-color: rgb(175, 175, 232);
+}
+table.tcentered th{
+    font-size: 20px;
+    color: rgb(255, 225, 127);
+    background-color:rgb(54, 6, 18);
+}
+table.tcentered td{
+    padding: 4px;
+}
+
+table.tcenteredsimple{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+table.tcenteredsimple th{
+    color: #078080;
+}
+table.tcenteredsimple tr:first-child{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.loginBlue{
+    background-color: rgb(66, 52, 216);
+    color: rgb(221, 235, 248);
+}
+.loginRed{
+    background-color: #4e0606;
+    color: rgb(221, 235, 248);
+}
+
+fieldset.bg-fieldsetBlue{
+    margin: 0 auto;
+    width: 50%;
+    background-color: #e2fafa;
+}
+.textbigblue{
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #0a0346;
+    color: white;
+    text-align: center;
+}
+form.text-centered{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.form-blue{
+    background-color: rgb(132, 62, 252);
+    color: white;
+}
+
+.cb{
+    clear: both;
+}

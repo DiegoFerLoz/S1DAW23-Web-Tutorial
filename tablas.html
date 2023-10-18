@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/Phantom_Thieves_Logo.png" alt="logo" width="70"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-3">
+                <h1 class="text-center bg-red text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-3">
+                <hr>
+            </div>
+            <div class="p-3">
+                <div id="tablas" class="py-3">
+                    <h2 class="text-center">TABLAS</h2>
+                    <h2 class="subr">Tipos de tablas</h2>
+                    <h3>Tabla de encabezado de fila</h3>
+                    <p>Las tablas se crean con el comando <strong>"table"</strong>. Se suelen añadir el número de filas
+                        y columnas después del comando.
+                        <br>Por ejemplo, al escribir el comando <strong>"table>(tr>th*5)+(tr>td*5)*3"</strong> se crea
+                        una tabla con una fila de encabezado (th) de 5 columnas, y 3 filas de celdas normales (td):
+                    </p>
+                    <table>
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Run</th>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                    </table>
+                    <p>Como vemos, se ha creado la tabla con 5 columnas y 4 filas (la fila del encabezado y las 3 filas
+                        que se han declarado). Sin embargo, queda mucho mejor si le añadimos un borde con la clase
+                        <strong>"border"</strong>:</p>
+                    <table border="2">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Run</th>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                    </table>
+                    <h3>Tabla de encabezado de columna</h3>
+                    <p>De igual manera que se puede establecer una fila de encabezados en la tabla, también se puede
+                        crea una columna con encabezados, aunque su declaración es un poco diferente.
+                        <br>Por ejemplo, <strong>"table>(tr>th+(td*4))*4"</strong> creará una tabla con una columna de
+                        encabezados:
+                    </p>
+                    <table border="2">
+                        <tr>
+                            <th>File</th>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                        </tr>
+                        <tr>
+                            <th>Edit</th>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                        </tr>
+                        <tr>
+                            <th>Selection</th>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                        </tr>
+                        <tr>
+                            <th>View</th>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                        </tr>
+                    </table>
+                    <h3>Tabla con combinaciones de celdas y título</h3>
+                    <p>Las celdas se pueden combinar, es decir, juntar entre sí, ya sea entre columnas
+                        (<strong>"colspan"</strong>) o filas (<strong>"rowspan"</strong>). Incluso se pueden combinar.
+                        <br>Además, se puede añadir un título a la tabla con el comando <strong>"caption"</strong>, el
+                        cual creará un título que se ajuste al ancho de la tabla:
+                    </p>
+                    <table border="2">
+                        <caption>Título de la tabla</caption>
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Run</th>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Celda1</td>
+                            <td colspan="2" rowspan="2">Celda4</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td rowspan="2">Celda3</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                    </table>
+                    <h3>Tabla customizada simple</h3>
+                    <p>Al igual que con el texto, las filas y columnas se puede editar. Para ello, se crean clases en el
+                        archivo .css, y al igual que con las listas, se puede afectar a filas y columnas concretas,
+                        siendo la fila de encabezados la más facil de editar.
+                        <br>En este caso va a ser algo simple como ejemplo.
+                    </p>
+                    <table border="2" class="tcentered">
+                        <tr>
+                            <th>File</th>
+                            <th>Edit</th>
+                            <th>Selection</th>
+                            <th>View</th>
+                            <th>Run</th>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                        <tr>
+                            <td>Celda1</td>
+                            <td>Celda2</td>
+                            <td>Celda3</td>
+                            <td>Celda4</td>
+                            <td>Celda5</td>
+                        </tr>
+                    </table>
+                    <p>El color de la letra en el encabezado parece no funcionar.</p>
+                    <h3>Lista con el horario</h3>
+                    <p>El comando usado es <strong>"table>(tr>th*6)+(tr>th+(td*5)*8)"</strong>.</p>
+                    <table border="1" class="tcenteredsimple">
+                        <caption><strong>Horario S1DAW</strong></caption>
+                        <tr>
+                            <th colspan="6">S1DAW</th>
+                        </tr>
+                        <tr>    
+                            <th>/-\</th>
+                            <th class="text-cyan">Lunes</td>
+                            <th class="text-cyan">Martes</th>
+                            <th class="text-cyan">Miércoles</th>
+                            <th class="text-cyan">Jueves</th>
+                            <th class="text-cyan">Viernes</th>
+                        </tr>
+                        <tr>
+                            <th>8:15<br>9:10</th>
+                            <td class="bg-FOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                            <td class="bg-ENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-LMSG">LMSG<br>Puli. Mo, FrJo<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-PROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-SISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie. Ib, JoEn<br>(1 B-304)</td>
+                        </tr>
+                        <tr>
+                            <th>9:10<br>10:05</th>
+                            <td rowspan="2" class="bg-PROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-LMSG">LMSG<br>Puli. Mo, FrJo<br>(1 B-301)</td>
+                        </tr>
+                        <tr>
+                            <th>10:05<br>11:00</th>
+                            <td class="bg-ING">ING<br>Guti Sa, JoÁn<br>(1 B-301)</td>
+                            <td class="bg-BDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                            <td class="bg-FOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th colspan="5">recreo</th>
+                        </tr>
+                        <tr>
+                            <th>11:30<br>12:25</th>
+                            <td rowspan="2" class="bg-BDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                            <td class="bg-FOL">FOL<br>Prud. Ga, Es<br>(1 B-301)</td>
+                            <td class="bg-ENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                            <td class="bg-BDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-PROG">PROG<br>Gall. Cr, Di<br>(1 B-301)</td>
+                        </tr>
+                        <tr>
+                            <th>12:25<br>13:20</th>
+                            <td rowspan="2" class="bg-BDD">BDD<br>León Dí, JuEf<br>(1 B-301)</td>
+                            <td rowspan="2" class="bg-SISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie. Ib, JoEn<br>(1 B-304)</td>
+                            <td rowspan="2" class="bg-SISI">SISI<br>Mart Ru, To<br>(1 B-301)<br>SISI<br>Atie. Ib, JoEn<br>(1 B-304)</td>
+                        </tr>
+                        <tr>
+                            <th>13:20<br>14:15</th>
+                            <td class="bg-ENDE">ENDE<br>Polo Or, Ed<br>(1 B-301)</td>
+                            <td class="bg-ING">ING<br>Guti Sa, JoÁn<br>(1 B-301)</td>
+                        </tr>
+                    </table>
+                    <p>Como vemos, se pueden hacer muchas cosas con cada una de las celdas de la tabla. En la configuración más general de la tabla (<strong>"table.tcenteredsimple"</strong>) se definen las características más generales de las celdas de la tabla, como los márgenes laterales, o el color del fondo.
+                    <br>Sin embargo, para cada celda que necesitase una configuración concreta, se pueden establecer características que sobreescribirán las generales dadas anteriormente.
+                    <br>Además, con <strong>colspan</strong> y <strong>rowspan</strong> se combinan celdas para evitar duplicados.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h1 class="bg-red text-center text-white py-3">&copy; Diego Fernández Lozano</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
