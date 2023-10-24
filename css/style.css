@@ -158,11 +158,17 @@ a {
 .bg-azul-o {
     background-color: rgb(0 157 222);
 }
+.bg-deepred{
+    background-color: rgba(196, 0, 0, 0.797);
+}
 .bg-red {
     background-color: #c91010;
 }
 .bg-azul-c {
     background-color: rgb(240, 249, 252);
+}
+.bg-black {
+    background-color: rgb(35, 35, 35);
 }
 .bg-azul-bg {
     background-color: rgb(132, 62, 252);

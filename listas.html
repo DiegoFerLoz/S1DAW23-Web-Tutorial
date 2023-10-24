@@ -11,44 +11,44 @@
 <body>
     <div class="container shadow">
         <header>
-            <div class="row align-items-center">
+            <div class="row align-items-center px-3">
                 <div class="col-3"><img src="img/Phantom_Thieves_Logo.png" alt="logo" width="70"></div>
-                <div class="col-9">
+                <div class="col-9 bg-black">
                     <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
                     <nav id="menu">
                         <ul class="text-right">
                             <li>
-                                <a href="index.html">
+                                <a class="text-white" href="index.html">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="parrafos.html">
+                                <a class="text-white" href="parrafos.html">
                                     Párrafos
                                 </a>
                             </li>
                             <li>
-                                <a href="enlaces.html">
+                                <a class="text-white" href="enlaces.html">
                                     Enlaces
                                 </a>
                             </li>
-                            <li>
-                                <a href="listas.html">
+                            <li class="bg-deepred">
+                                <a class="text-white" href="listas.html">
                                     Listas
                                 </a>
                             </li>
                             <li>
-                                <a href="tablas.html">
+                                <a class="text-white" href="tablas.html">
                                     Tablas
                                 </a>
                             </li>
                             <li>
-                                <a href="formularios.html">
+                                <a class="text-white" href="formularios.html">
                                     Formularios
                                 </a>
                             </li>
                             <li>
-                                <a href="multimedia.html">
+                                <a class="text-white" href="multimedia.html">
                                     Multimedia
                                 </a>
                             </li>
@@ -69,11 +69,14 @@
             <div class="p-3">
                 <div id="listas" class="py-3">
                     <h2 class="text-center">LISTAS</h2>
-                    <p>Las listas se crean con los comandos "ul" (para listas desordenadas), "ol" (listas ordenadas), o
-                        "dl (para listas de definición).</p>
-                    <h2 class="subr">Tipos de listas</h2>
-                    <h3><strong>Listas desordenadas</strong></h3>
-                    <p>Las listas desordenadas (sin orden concreto) se crean con el comando "ul". Voy a crear una lista
+                    <p>Las listas se crean con los comandos <strong>"ul"</strong> (para listas desordenadas),
+                        <strong>"ol"</strong> (listas ordenadas), o
+                        <strong>"dl"</strong> (para listas de definición).
+                    </p>
+                    <h2 class="text-center">Tipos de listas</h2>
+                    <h3><u>Listas desordenadas</u></h3>
+                    <p>Las listas desordenadas (sin orden concreto) se crean con el comando <strong>"ul"</strong>. Voy a
+                        crear una lista
                         con 3 elementos:</p>
                     <ul>
                         <li>Patata</li>
@@ -81,8 +84,9 @@
                         <li>Azuuul</li>
                     </ul>
                     <p>Por defecto, los elementos se tabulan con círculos.</p>
-                    <h3><strong>Listas ordenadas</strong></h3>
-                    <p>Las listas ordenadas se crean con el comando "ol". Vamos a crear la misma lista, pero ordenada:
+                    <h3><u>Listas ordenadas</u></h3>
+                    <p>Las listas ordenadas se crean con el comando <strong>"ol"</strong>. Vamos a crear la misma lista,
+                        pero ordenada:
                     </p>
                     <ol>
                         <li>Patata</li>
@@ -90,13 +94,13 @@
                         <li>Azuuul</li>
                     </ol>
                     <p>En este caso, por defecto, los elementos se tabulan y se añaden números que ordenan la lista.</p>
-                    <h3><strong>Listas de varios niveles</strong></h3>
+                    <h3><u>Listas de varios niveles</u></h3>
                     <p>En cada elemento de una lista, ya sea ordenada o desordenada, se puede introducir otra lista,
                         para así crear listas de múltiples niveles.
                         <br>Vamos a crear una lista desordenada con 3 niveles:
                     </p>
                     <ul>
-                        <li>Patata <ul>
+                        <li>Patata<ul>
                                 <li>Frita</li>
                                 <li>Cocida</li>
                             </ul>
@@ -123,7 +127,7 @@
                     </p>
                     <p>Las listas multinivel pueden ser ordenadas o desordenadas, funcionan igual. Si se mezclan, los
                         símbolos variarán.</p>
-                    <h3><strong>Lista customizada</strong></h3>
+                    <h3><u>Lista customizada</u></h3>
                     <p>De nuevo, se puede customizar tanto las listas ordenadas como las desordenadas. Para ello, se
                         establecen normas en el .css que afectarán a uno u otro nivel.</p>
                     <p>En este caso vamos a customizar la lista multinivel desordenada del ejemplo anterior:</p>
@@ -152,23 +156,27 @@
                             </li>
                         </ul>
                     </div>
-                    <p>En este caso le he puesto un cuadrado al primer nivel, números romanos al segundo nivel, y números decimales al tercer nivel.
-                        <br>Para ello se introduce la lista en una caja ("div"), donde se le asigna un id, que será único para esa caja y lista. Después, en el .css se añaden
+                    <p>En este caso le he puesto un cuadrado al primer nivel, números romanos al segundo nivel, y
+                        números decimales al tercer nivel.
+                        <br>Para ello se introduce la lista en una caja <strong>("div")</strong>, donde se le asigna un
+                        id, que será único para esa caja y lista. Después, en el .css se añaden
                         las reglas correspondientes a cada nivel.
                     </p>
-                    <h3><strong>Lista customizada con imágen externa</strong></h3>
-                    <p>Además de poder cambiar el elemento que se asigna a cada nivel, se puede establecer una imágen externa que se asigne a cierto nivel de la lista.</p>
-                    <p>Utilizando el archivo css, se crea otra clase que contiene <strong>"list-style-image: url(ruta)"</strong>, con la ruta de la imágen, y se asigna de la misma manera.</p>
+                    <h3><u>Lista customizada con imágen externa</u></h3>
+                    <p>Además de poder cambiar el elemento que se asigna a cada nivel, se puede establecer una imágen
+                        externa que se asigne a cierto nivel de la lista.</p>
+                    <p>Utilizando el archivo css, se crea otra clase que contiene <strong>"list-style-image:
+                            url(ruta)"</strong>, con la ruta de la imágen, y se asigna de la misma manera.</p>
                     <div id="customimage">
                         <ul>
-                            <li>Patata <ul>
+                            <li>Patata<ul>
                                     <li>Frita</li>
                                     <li>Cocida</li>
                                 </ul>
                             </li>
                             <li>Croqueta</li>
                             <li>Azuuul<ul>
-                                    <li>Claro <ul>
+                                    <li>Claro<ul>
                                             <li>Celeste</li>
                                             <li>Cian</li>
                                             <li>Algún otro tono de azul claro</li>
@@ -184,16 +192,19 @@
                             </li>
                         </ul>
                     </div>
-                    <h3><strong>Lista de definición</strong></h3>
-                    <p>Las listas de definición se crean con el comando <strong>"dl"</strong>, y sirven para establecer una lista de términos con sus definiciones.
-                        <br>Vamos a crear una lista de definición con tres términos:</p>
+                    <h3><u>Lista de definición</u></h3>
+                    <p>Las listas de definición se crean con el comando <strong>"dl"</strong>, y sirven para establecer
+                        una lista de términos con sus definiciones.
+                        <br>Vamos a crear una lista de definición con tres términos:
+                    </p>
                     <dl>
-                        <dt><strong>Patata</strong></dt>
-                        <dd>Se come</dd>
-                        <dt><strong>Croqueta</strong></dt>
-                        <dd>Se come</dd>
+                        <dt><strong>Tortitas</strong></dt>
+                        <dd>Se comen. Están muy ricas.</dd>
+                        <dt><strong>Siete</strong></dt>
+                        <dd>El número que va después del 6 y antes del 8.</dd>
                         <dt><strong>Azul</strong></dt>
-                        <dd>Se trata de un color frío. Existen muchas variantes de este color, como el cian, celeste, etc. </dd>
+                        <dd>Se trata de un color frío. Existen muchas variantes de este color, como el cian, celeste,
+                            etc. </dd>
                     </dl>
                 </div>
             </div>

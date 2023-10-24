@@ -11,44 +11,44 @@
 <body>
     <div class="container shadow">
         <header>
-            <div class="row align-items-center">
+            <div class="row align-items-center px-3">
                 <div class="col-3"><img src="img/Phantom_Thieves_Logo.png" alt="logo" width="70"></div>
-                <div class="col-9">
+                <div class="col-9 bg-black">
                     <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
                     <nav id="menu">
                         <ul class="text-right">
                             <li>
-                                <a href="index.html">
+                                <a class="text-white" href="index.html">
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a href="parrafos.html">
+                                <a class="text-white" href="parrafos.html">
                                     Párrafos
                                 </a>
                             </li>
-                            <li>
-                                <a href="enlaces.html">
+                            <li class="bg-deepred">
+                                <a class="text-white" href="enlaces.html">
                                     Enlaces
                                 </a>
                             </li>
                             <li>
-                                <a href="listas.html">
+                                <a class="text-white" href="listas.html">
                                     Listas
                                 </a>
                             </li>
                             <li>
-                                <a href="tablas.html">
+                                <a class="text-white" href="tablas.html">
                                     Tablas
                                 </a>
                             </li>
                             <li>
-                                <a href="formularios.html">
+                                <a class="text-white" href="formularios.html">
                                     Formularios
                                 </a>
                             </li>
                             <li>
-                                <a href="multimedia.html">
+                                <a class="text-white" href="multimedia.html">
                                     Multimedia
                                 </a>
                             </li>
@@ -69,30 +69,34 @@
             <div class="p-3">
                 <div id="enlaces" class="py-3">
                     <h2 class="text-center">ENLACES</h2>
-                    <p>Los enlaces a otras páginas se crean con el comando "a".</p>
-                    <p> Para mayor comodidad se introduce dentro de un párrafo, esto da mayor control a la hora de modificar el texto del enlace.</p>
-                    <h2>Tipos de Enlaces:</h2>
-                    <h3>Un enlace a una página que tenemos en la carpeta:</h3>
+                    <p>Los enlaces a otras páginas se crean con el comando <strong>"a"</strong>.</p>
+                    <p> Para mayor comodidad se introduce dentro de un párrafo, esto da mayor control a la hora de
+                        modificar el texto del enlace.</p>
+                    <h2 class="text-center">Tipos de Enlaces</h2>
+                    <h3><u>Un enlace a una página que tenemos en la carpeta</u></h3>
                     <p>En este caso solo tenemos que pasar el nombre del fichero html que queremos ejecutar.</p>
                     <p><a class="bg-azul-bg" href="index.html"><span class="text-white">Este enlace va a
                                 Home</span></a>.</p>
-                    <h3>Un enlace a una página de internet, en este caso <strong>EducamosCLM</strong>:</h3>
+                    <h3><u>Un enlace a una página de internet, en este caso EducamosCLM</u></h3>
                     <p>Para enlazar una página web cualquiera, solo necesitamos su dirección.</p>
                     <p><a class="bg-azul-bg" href="https://educamosclm.castillalamancha.es"><span
                                 class="text-white">Este enlace va a EducamosCLM</span></a>.</p>
-                    <h3>Un enlace que se abre en una pestaña nueva:</h3>
-                    <p>Si añadimos "target="_blank"" al enlace, este aparecerá en una nueva pestaña.</p>
+                    <h3><u>Un enlace que se abre en una pestaña nueva</u></h3>
+                    <p>Si añadimos <strong>"target="_blank""</strong> al enlace, este aparecerá en una nueva pestaña.
+                    </p>
                     <p><a target="_blank" class="bg-azul-bg" href="https://educamosclm.castillalamancha.es"><span
                                 class="text-white">Este enlace se abre en otra pestaña</span></a>.</p>
-                    <h3>Un enlace que ejecuta un programa de javascript (en este caso una simple orden de alert):</h3>
+                    <h3><u>Un enlace que ejecuta un programa de javascript (en este caso una simple orden de alert)</u>
+                    </h3>
                     <p>Se pueden ejecutar programas en javascript, en este caso se ejecuta un alert.</p>
                     <p><a class="bg-azul-bg" href="javascript: alert('Tremendo javascript acabo de ejecutar')"><span
                                 class="text-white">Este enlace ejecuta un programa javascript</span></a>.</p>
-                    <h3>Un enlace que manda un email (lo intenta):</h3>
-                    <p>También se puede mandar un correo a un destinatario. Sin embargo, solo se ejecuta la órden de comenzar a escribir el correo, el cuerpo hay que definirlo manualmente.</p>
+                    <h3><u>Un enlace que manda un email (lo intenta)</u></h3>
+                    <p>También se puede mandar un correo a un destinatario. Sin embargo, solo se ejecuta la órden de
+                        comenzar a escribir el correo, el cuerpo hay que definirlo manualmente.</p>
                     <p><a class="bg-azul-bg" href="mailto:diegofernandezl2001@gmail.com"><span class="text-white">Este
                                 enlace trata de mandar un correo</span></a>.</p>
-                    <h3>Un enlace representado por una imagen:</h3>
+                    <h3><u>Un enlace representado por una imagen</u></h3>
                     <p>En lugar de texto, se puede utilizar una imagen. También se ha centrado la imagen.</p>
                     <p class="text-center"><a target="_blank" href="https://www.youtube.com/"><img
                                 src="img/Youtube_logo.png" alt="logo_youtube"
